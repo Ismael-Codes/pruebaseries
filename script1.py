@@ -19,13 +19,15 @@ def formula(nn):
 
 
 if __name__ == '__main__':
-     n=float(input("Dame n"))
-     r=ecuacion(n)
-     r2=formula(n)
+     k=float(input("Dame n"))
+     r=ecuacion(k)
+     r2=formula(k)
 
      if r==r2:
         print("Si son equivalentes")
      else:
+
+
         print("No son equivalentes")
 
 
