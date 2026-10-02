@@ -16,19 +16,21 @@ def formula(nn):
     print("= ", ac,end="")
     return ac
 
+##Leonardo Damian hernandez
+
 
 
 
 
 
 if __name__ == '__main__':
-     k=float(input("Dame n"))
-     r=ecuacion(k)
-     r2=formula(k)
+    k=float(input("Dame n"))
+    r=ecuacion(k)
+    r2=formula(k)
 
-     if r==r2:
+    if r==r2:
         print("Si son equivalentes")
-     else:
+    else:
 
 
         print("No son equivalentes")
