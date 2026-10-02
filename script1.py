@@ -12,7 +12,7 @@ def formula(nn):
         print(f"{i} + ",end="")
     print("= ", ac,end="")
     return ac
-
+#Git branch from Deivid
 
 
 
