@@ -3,7 +3,7 @@ def ecuacion(nn):
     print(r)
     return r
 
-
+#.
 
 
 #..
