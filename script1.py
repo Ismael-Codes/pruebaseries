@@ -4,6 +4,9 @@ def ecuacion(nn):
     return r
 
 
+
+
+#..
 def formula(nn):
     lim=nn*(nn + 1)/2
     ac=0.0
