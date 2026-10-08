@@ -1,6 +1,6 @@
 def ecuacion3(n):
     print("Resultado ecuación: ")
-    r=n*(n+1)*(n+2)/6
+    r=n*(n+1)*(n+2)//6
     print(r)
     return r
 
@@ -19,7 +19,25 @@ def formula3(n):
     return ac
 #Git branch from Deivid
 
-#def ecuacion4
+def ecuacion4(n):
+    print("Resultado ecuación: ")
+    r=5*n*(n+1)//2
+    print(r)
+    return r
+
+
+def formula4(n):
+    print("Resultado formula: ")
+    ac = 0
+    for i in range(1, n + 1):
+        k = 5*i
+        ac += k
+        if i < n:
+            print(f"{k} + ", end="")
+        else:
+            print(f"{k} = ", end="")
+    print(ac)
+    return ac
 
 
 
