@@ -119,10 +119,14 @@ def formula6(n):
     print(ac)
     return ac
 
-
+def ecuacion7(n):
+    r=(n**2)>(n+1)
+    print(r)
+    return r
 
 if __name__ == '__main__':
      k=int(input("Dame n: "))
+     ecuacion7(k)
      r=ecuacion6(k)
      r2=formula6(k)
 
@@ -132,6 +136,4 @@ if __name__ == '__main__':
 
 
         print("No son equivalentes")
-
-
 
