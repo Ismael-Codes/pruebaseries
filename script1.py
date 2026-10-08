@@ -79,14 +79,34 @@ def formula4(n):
     print(ac)
     return ac
 
+def ecuacion5(n):
+    print("Resultado ecuación: ")
+    r=n*(n+1)*(2*n+1)//6
+    print(r)
+    return r
+
+
+def formula5(n):
+    print("Resultado formula: ")
+    ac = 0
+    for i in range(1, n + 1):
+        k = i**2
+        ac += k
+        if i < n:
+            print(f"{k} + ", end="")
+        else:
+            print(f"{k} = ", end="")
+    print(ac)
+    return ac
+
 
 
 
 
 if __name__ == '__main__':
      k=int(input("Dame n: "))
-     r=ecuacion2(k)
-     r2=formula2(k)
+     r=ecuacion5(k)
+     r2=formula5(k)
 
      if r==r2:
         print("Si son equivalentes")
