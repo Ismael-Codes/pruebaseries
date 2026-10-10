@@ -95,7 +95,7 @@ def formula5(nn):
 
 def ecuacion6(nn):
     print("Resultado de la ecuacion: ")
-    r = nn * (nn + 2)*((nn+1)**2)/4
+    r = (nn**2 *(nn+1)**2)/4
     print(r)
     return r
 
