@@ -1,6 +1,7 @@
 def ecuacion1(n):
-    return 2 * n**2
-
+    r = 2 * n**2
+    print(r)
+    return r
 def formula1(n):
     ac = 0
     for i in range(1, int(n) + 1):
@@ -13,12 +14,31 @@ def formula1(n):
     print(f" = {ac}")
     return ac
 
-def ecuacion(nn):
+
+def ecuacion2(n):
+    r = n * (2*n - 1)
+    print(r)
+    return r
+
+def formula2(n):
+    ac = 0
+    for i in range(1, int(n) + 1):
+        termino = 4*i - 3
+        ac += termino
+        if i < n:
+            print(f"{termino} + ", end="")
+        else:
+            print(f"{termino}", end="")
+    print(f" = {ac}")
+    return ac
+
+
+def ecuacion3(nn):
     r=nn*(nn+1)*(nn+2)/6
     print(r)
     return r
 
-def formula(nn):
+def formula3(nn):
     lim=nn*(nn + 1)/2
     ac=0.0
     for i in range(1,int(lim)):
@@ -28,8 +48,11 @@ def formula(nn):
     return ac
 
 if __name__ == '__main__':
-     k=float(input("Dame n"))
+     k=float(input("Dame n: "))
+     print("--------------------------------------------")
+     print("Ecuacion: ")
      r=ecuacion1(k)
+     print("Formula: ")
      r2=formula1(k)
 
      if r==r2:
