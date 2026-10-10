@@ -1,20 +1,3 @@
-def ecuacion3(nn):
-    r=nn*(nn+1)*(nn+2)/6
-    print(r)
-    return r
-
-
-
-
-#..
-def formula3(nn):
-    lim=nn*(nn + 1)/2
-    ac=0.0
-    for i in range(1,int(lim)):
-        ac+=i
-        print(f"{i} + ",end="")
-    print("= ", ac,end="")
-    return ac
 
 def ecuacion1(nn):
     print("Resultado de la ecuacion: ")
@@ -55,6 +38,22 @@ def formula2(nn):
     print(ac)
     return ac
 
+def ecuacion3(nn):
+    r=nn*(nn+1)*(nn+2)/6
+    print(r)
+    return r
+
+
+def formula3(nn):
+    print("Resultado de la formula: ")
+    lim=nn*(nn + 1)/2
+    ac=0.0
+    for i in range(1,int(lim)):
+        ac+=i
+        print(f"{i} + ",end="")
+    print("= ", ac,end="")
+    return ac
+
 
 def ecuacion4(nn):
     print("Resultado de la ecuacion: ")
@@ -75,8 +74,48 @@ def formula4(nn):
     print(ac)
     return ac
 
+def ecuacion5(nn):
+    print("Resultado de la ecuacion: ")
+    r = nn * (nn + 1)*(2* nn+1)/6
+    print(r)
+    return r
 
+def formula5(nn):
+    print("Resultado de la formula: ")
+    ac = 0
+    for i in range(1, nn + 1):
+        k = i ** 2
+        ac += k
+        if i <= nn:
+            print(f"{k} + ",end="")
+        else:
+            print(f"{k} = ",end="")
+    print(ac)
+    return ac
 
+def ecuacion6(nn):
+    print("Resultado de la ecuacion: ")
+    r = nn * (nn + 2)*((nn+1)**2)/4
+    print(r)
+    return r
+
+def formula6(nn):
+    print("Resultado de la formula: ")
+    ac = 0
+    for i in range(1, nn + 1):
+        k = i ** 3
+        ac += k
+        if i <= nn:
+            print(f"{k} + ",end="")
+        else:
+            print(f"{k} = ",end="")
+    print(ac)
+    return ac
+
+def ecuacion7(nn):
+    r=(nn ** 2)> (nn+1)
+    print(f"{nn**2}> {nn+1}")
+    return r
 
 
 
@@ -154,6 +193,7 @@ if __name__ == '__main__':
 
         elif opcion == 8:
             print("adioss!")
+            break
 
 
 
