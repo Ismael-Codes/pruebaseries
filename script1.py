@@ -80,7 +80,21 @@ def formula5(n):
     print(f" = {ac}")
     return ac
 
+def ecuacion6(n):
+    r = (n**2 * (n + 1)**2) / 4
+    print(r)
+    return r
 
+def formula6(n):
+    ac = 0
+    for i in range(1, int(n) + 1):
+        ac += i**3
+        if i < n:
+            print(f"{i}³ + ", end="")
+        else:
+            print(f"{i}³", end="")
+    print(f" = {ac}")
+    return ac
 
 if __name__ == '__main__':
      k=float(input("Dame n: "))
