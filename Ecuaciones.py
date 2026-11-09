@@ -45,7 +45,7 @@ def ejercicio7(n):
         print(i ** 2, ">", i + 1, ":", i ** 2 > i + 1)
 
 
-if __name__ == "__main__":
+if __name__ == "main":
     n = int(input("Dame n: "))
     op = int(input("Elige el ejercicio (1-7): "))
 
